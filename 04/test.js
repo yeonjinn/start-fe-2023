@@ -1,6 +1,6 @@
 const title='jeju';
 const url='https://daum.net/'+title;
-const url2='https://daum.net/`${title}`'; //왜 안됨
+const url2='https://daum.net/`${title}`';
 
 console.log(url2);
 
