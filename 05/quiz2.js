@@ -1,5 +1,6 @@
 var board=document.getElementById("board");
 let bordcolor=true;
+let select=null;
 
 for(var i=0; i<4; i++){
     for(var j=0; j<4; j++){
@@ -10,8 +11,13 @@ for(var i=0; i<4; i++){
         board.appendChild(cell);
 
         cell.addEventListener('click',function(){
-            cell.classList.toggle('change')
+            if(select){
+                select.classList.remove('change')
+            }
+            select=cell;
+            select.classList.add('change');
         });
+        board.appendChild(cell);
     }
 
     
