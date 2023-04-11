@@ -69,4 +69,4 @@ function gugudan(a){
         console.log(a+'*'+i+'='+(a*i));
     }
 }
-console.log(gugudan(a))
+// console.log(gugudan(1));
